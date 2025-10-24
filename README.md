@@ -262,7 +262,7 @@ I made use of **Regular Expressions (`re` module)** to clean numeric fields and 
 
 ---
 
-## 👩 Author
+##  Author
 
 **Name:** Salome Akpan
 **GitHub:** [Sallie25](https://github.com/Sallie25)
@@ -270,4 +270,5 @@ I made use of **Regular Expressions (`re` module)** to clean numeric fields and 
 **Organization:** Data Epic Beginners with Experience Program
 
 ---
+
 
