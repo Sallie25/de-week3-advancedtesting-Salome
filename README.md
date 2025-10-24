@@ -46,7 +46,7 @@ My task is to test and harden the pipeline so that such data issues **don’t si
 
 ---
 
-## 🏗️ Pipeline Architecture
+##  Pipeline Architecture
 
 The workflow consists of **five modular components**, each with its own unit tests and a final integration test.
 
@@ -71,7 +71,7 @@ tests/
 
 ---
 
-## ⚙️ Component Descriptions
+##  Component Descriptions
 
 ### 1. **Reader**
 
@@ -234,7 +234,7 @@ Expected result:
 
 ---
 
-## 🚫 .gitignore
+##  .gitignore
 
 ```
 __pycache__/
@@ -246,7 +246,7 @@ __pycache__/
 
 ---
 
-## 🧾 Submission Format
+##  Submission Format
 
 ```
 Week 3 — AdvancedTesting — Salome — https://github.com/Sallie25/de-week3-advancedtesting-Salome.git
@@ -270,3 +270,4 @@ I made use of **Regular Expressions (`re` module)** to clean numeric fields and 
 **Organization:** Data Epic Beginners with Experience Program
 
 ---
+
