@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(message)s")
 
 @dataclass   
-class OrderRecord:
+class ShopLinkOrderRecord:
     order_id: str
     timestamp: str
     item: str
@@ -32,13 +32,13 @@ class Reader:
     # Define a method that reads different file formats and passes them into a  dictionary
     def read(self) -> Iterable[Dict[str, Any]]:
 
-        # if self.format == "csv":
-        #     with open(self.path, newline="", encoding="utf-8") as f:
-        #         reader = csv.DictReader(f)
-        #         for row in reader:
-        #              yield dict(row)
+        if self.format == "csv":
+            with open(self.path, newline="", encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                     yield dict(row)
 
-        if self.format == "json":
+        elif self.format == "json":
             with open(self.path, "r", encoding="utf-8") as f:
                  data = json.load(f) # data is a list of dictionaries
                  for item in data:
