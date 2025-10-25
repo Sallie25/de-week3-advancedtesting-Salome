@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(message)s")
 
 # Creating the validator
 
-class Validator:
+class ShopLinkOrderValidator:
     REQUIRED_COLS = ["order_id", "timestamp", "item",  "payment_status"] # These are cols that are required to be present. Without any of them we would have to nullify that particular entry.
     OTHERS = ["quantity", "price","total"] # We require atleast two of the columns in this category to be present else we nullify the entire entry
 
